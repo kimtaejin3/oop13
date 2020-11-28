@@ -13,7 +13,7 @@ void bubble_sort(ForwardIterator first, ForwardIterator last, Compare comp) {
 			}
 		}
 	}
-}struct compLess {	bool operator()(double x, double y) {		return x < y;	}};struct compGreater {	bool operator()(double x, double y) {		return x > y;	}};int main() {
+}struct compLess {	bool operator()(int x, int y) {		return x < y;	}};struct compGreater {	bool operator()(int x, int y) {		return x > y;	}};int main() {
 	std::forward_list<int> values{ 7, 0, 6, 1, 5, 2, 4, 3 };
 	std::cout << "오름차순 정렬" << std::endl;
 	compLess compLess; //Functor 생성
